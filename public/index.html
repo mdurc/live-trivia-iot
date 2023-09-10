@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Live Trivia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class = "main">
+            <div id = "history">
+                <h3>History:</h3>
+                <ul id="history-list"></ul>
+            </div>
+            
+            <div class="container">
+                <p>Time Left: <span id="countdown-timer">10</span> seconds</p>
+                <h1 id = "category">Category: </h1>
+                <div id="question-container">
+                    <p id="question-text">Question..</p>
+                    <div id="answer-buttons" class="btn-container">
+                    <button class="Answerbtn">Answer 1</button>
+                    <button class="Answerbtn">Answer 2</button>
+                    <button class="Answerbtn">Answer 3</button>
+                    <button class="Answerbtn">Answer 4</button>
+                    </div>
+                </div>
+                <div id="streak-container">
+                    <p>Streak: <span id="streak">0</span></p>
+                </div>
+                
+            </div>
+              
+              <div class = "leaderboard-containter">
+                  <h3>Leaderboard:</h3>
+                  
+                  <p>Highscore: <span id="highscore">0</span></p>
+              </div>
+              
+          </div>
+          
+        <script src = "script.js"></script>
+    </body>
+</html>
