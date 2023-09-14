@@ -8,10 +8,13 @@ body {
   height: 100vh;
   background-color: #f5f5f5;
   flex-direction : column;
+  user-select: none;
+
+  background-color: lightgray;
 }
 
 .container {
-  background-color: white;
+  background-color: lightblue;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -46,13 +49,83 @@ body {
   margin-top: 20px;
 }
 
-.leaderboard, .history {
-  display: flex;
-  flex-direction: column;
+.scrollable-containter{
+  max-height: 400px;
+  max-width: 400px;
+  overflow: scroll
+}
+
+.leaderboard-container{
+    padding-right: 20px;
+}
+.history{
+    padding-left: 20px;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+::-webkit-scrollbar-corner {
+    background-color: transparent;
 }
 
 .main{
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 100px;
+}
+
+/* CSS to style the login container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS to style labels */
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* CSS to style input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* CSS to style the Start button */
+#start-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#start-button:hover {
+    background-color: #0056b3;
 }
