@@ -2,6 +2,7 @@
 
 Server is run on computer. Accessed through local host, but by using ngrok or another hosting service, can be accessed online. The server updates the webpage over intervals, updating the leaderboard, questions. The questions are the exact same for every user on the server, and are given the same timer per question. The timer is run on the server starting at 10 seconds for each question, so if you come into a question late, you might only get 10-x seconds, so that your question finishes at the same as everyone else. New questions come up at the same time on every screen. <br>
 <br>
+- Questions and Answer options are provided by an ai trivia question API. Trivia by API-Ninjas
 - Leaderboard is updated once you lose your streak which is visible under the questions.
 - Data is saved for your username and password on your local browser, and also the server. On the first screen you have to login, or create an account if the login doesn't find an existing user. When your browser loads the page, all users and their highscores are loaded onto the server. But the server also stores and saves all the users created while it is running. The local save on the browser useful for if I end the server, so that people can still keep their highscores if I choose to reboot the server.
   - Line 8 of the terminal screenshot shows, "recieved userdata", which is the local data. All the currently loaded users are printed regularly in the terminal along with passwords
